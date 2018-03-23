@@ -1,0 +1,308 @@
+/*------------------body arrangement-------------------*/
+body {
+	background-image: url(https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/d0c8a786c9177f3ed399cf8572cf3bc79e3d568c.jpg);
+	background-size: cover;
+	/*background-image: url(http://pic3.bbzhi.com/jingxuanbizhi/xiaridetiankong/jingxuan_jingxuanyitu_226926_18.jpg);*/
+	background-repeat: no-repeat;
+	/*background-color: #E6E6E6;*/
+}
+#bgPic {
+	background-image: url(image/pet_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.heading img {
+	height: 70px;
+	width: 70px;
+	border-radius: 100%;
+}
+.heading {
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	height: 50px;
+	top: 0;
+	color: white;
+	width: 100%;
+	padding-top: 0px;
+	z-index: 99;
+}
+.heading span {
+	position: absolute;
+	font-family: cursive;
+	font-size: 15pt;
+	padding-top: 17px;
+    padding-left: 17px;
+}
+/*-----------begin---------------*/
+#begin {
+	position: absolute;
+	z-index: 88;
+	width: 800px;
+	top: 100px;
+	left: 20%;
+}
+#beginHidden {
+	position: absolute;
+	height: 0;
+	width: 0;
+}
+/*-------------------------envalop-------------*/
+#env {
+	height: 0px;
+}
+#envAfter {
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	width: 100%;         /* small*/
+    height: 119px;
+	border-radius: 5px;
+	opacity: 0.8;
+	background-image: url(image/env1.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform-style: 
+}
+#envAfter:hover {
+	left: 0px;
+	top: 150px;
+	width: 100%;         /* small*/
+    height: 300px;
+}
+#pink {
+	background-image: url(image/pink.png);
+    background-position: center;
+    background-size: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-top: -443px;
+}
+#green {
+	background-image: url(image/green.png);
+	background-position: center;
+    background-size: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-top: -443px;
+}
+#purple {
+	background-image: url(image/purple.png);
+	background-position: center;
+    background-size: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-top: -443px;
+}
+#words {
+	z-index: 99;
+	background-image: url(image/end.png);
+	background-position: center;
+    background-size: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-top: -443px;
+}
+#endHiden {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+#end {
+	z-index: 200;
+	width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 175px;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 21pt;
+    font-family: cursive;
+    left: 0px;
+    height: 150px;
+    color: rebeccapurple;
+    padding-top: 16px;
+}
+#end span {
+	font-size: 53pt;
+    font-weight: bolder;
+}
+#continue {
+	opacity: 0;
+}
+#continueAfter {
+	position: absolute;
+    text-align: center;
+    right: 10%;
+    top: 500px;
+}
+/*------------------wrap div------------------*/
+.wrap {
+	z-index: 66;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
+	/*border: 2px solid gray;*/
+	text-align: center;
+}
+
+.wrapHidden { opacity: 0; }
+
+/*---------------------------h1------------------------*/
+h1 {
+	margin-top: 10px;
+	font-size: 35pt;
+	color: white;
+	text-shadow: 1px 2px 3px #AFBBDE;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+/*-------------------------puzzle------------------------*/
+/*--------------4x4-------------*/
+ul {
+	/*background-color: #E6E6E6;*/
+	border-radius: 2px;
+}
+.bg {
+	width: 352px;
+	height: 352px;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(153,153,153,0.8);
+	-webkit-box-shadow: 0px 0px 10px rgba(153,153,153,0.8);
+}
+
+.col {
+	background:rgba(0,0,0,0.3);
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: inline-flex;
+	vertical-align: left;
+	/*border: 1px solid red;*/
+}
+.pic {
+	z-index: 66;
+	cursor: pointer;
+	border: 1px solid #B7B7B7;
+	border-radius: 5px;
+	height: 86px;
+	width: 86px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5) inset;
+}
+.pic:hover {
+	z-index: +90000;
+	cursor: pointer;
+	border-width: 0px;
+	border-radius: 3px;
+	transform: scale(1.1);
+}
+/*-----------white block----------*/
+#pic-15 {
+	background-position: 90px -258px;
+	cursor: default;
+	opacity: 0;
+}
+/*------position of 16 pic------*/
+#pic-0 {
+	background-position: -4px 0px;
+}
+#pic-1 {
+	background-position: 262px 0px;	
+}
+#pic-2 {
+	background-position: 176px 0px;	
+}
+#pic-3 {
+	background-position: 90px 0px;	
+}
+#pic-4 {
+	background-position: -4px -86px;	
+}
+#pic-5 {
+	background-position: 262px -86px;
+}
+#pic-6 {
+	background-position: 176px -86px;
+}
+#pic-7 {
+	background-position: 90px -86px;
+}
+#pic-8 {
+	background-position: -4px -172px;	
+}
+#pic-9 {
+	background-position: 262px -172px;	
+}
+#pic-10 {
+	background-position: 176px -172px;	
+}
+#pic-11 {
+	background-position: 90px -172px;	
+}
+#pic-12 {
+	background-position: -4px -258px;	
+}
+#pic-13 {
+	background-position: 262px -258px;	
+}
+#pic-14 {
+	background-position: 176px -258px;	
+}
+
+/*----------choose pictures---------*/
+#choosePic {
+	z-index: 66;
+	position: absolute;
+	margin-left: -39px;
+	margin-top: -62px;
+	padding: 0px;
+}
+.choose {
+	margin: 10px;
+	border-radius: 5px;
+	list-style: none;
+	width: 105px;
+	height: 105px;
+	background-size: cover;
+	box-shadow: 7px 6px 10px rgba(153,153,153,0.8), 0px 0px 10px rgba(0,0,0,0.5) inset;
+}
+
+.imag0 {
+	background-image: url(image/panda.jpg);
+}
+.imag1 {
+	background-image: url(image/bg.jpg);
+}
+.imag2 {
+	background-image: url(image/flower.jpg);
+}
+.imag3 {
+	background-image: url(image/black.jpg);
+}
+
+/*---------------------button-------------------------*/
+
+button {
+	clear: right;
+	margin-top: 15px;
+	height: 44px;
+	width: 126px;
+	color: rgba(58, 89, 0, 0.76);
+	border-radius: 5px;
+	font-size: 15pt;
+	font-family: fantasy;
+	box-shadow: 0px 0px 10px rgba(153,153,153,0.8),0px 0px 10px rgba(58, 89, 0, 0.76) inset;
+}
+
+/*----------------- sound----------------------*/
+.sound {
+	border-radius: 10px;
+	opacity: 0.4;
+	position: fixed;
+	bottom: 0;
+	height: 80px;
+	left: 0;
+	width: 100%;
+}
